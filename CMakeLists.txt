@@ -99,7 +99,7 @@ target_link_libraries(hello
  )
 
 ## Mark executables and/or libraries for installation
-install(TARGETS my_tutorial hello
+install(TARGETS hello
   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
