@@ -50,7 +50,7 @@ find_package(catkin REQUIRED COMPONENTS roscpp rospy std_msgs message_generation
 catkin_package(
 #   INCLUDE_DIRS include
    CATKIN_DEPENDS message_runtime
-#  LIBRARIES beginner_tutorials
+#  LIBRARIES example_pkg
 #  CATKIN_DEPENDS roscpp rospy std_msgs
 #  DEPENDS system_lib
 )
@@ -66,7 +66,7 @@ include_directories(include
 )
 
 ## Declare a cpp library
-# add_library(beginner_tutorials
+# add_library(example_pkg
 #   src/${PROJECT_NAME}/beginner_tutorials.cpp
 # )
 
@@ -76,7 +76,7 @@ add_executable(hello src/hello.cpp)
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
-# add_dependencies(beginner_tutorials_node beginner_tutorials_generate_messages_cpp)
+# add_dependencies(example_node example_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(hello
@@ -93,8 +93,7 @@ target_link_libraries(hello
 # Mark executable scripts (Python etc.) for installation
 # in contrast to setup.py, you can choose the destination
  install(PROGRAMS
-   scripts/talker.py
-   scripts/listener.py
+   scripts/example.py
    DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
  )
 
@@ -114,7 +113,7 @@ install(TARGETS hello
 
 ## Mark other files for installation (e.g. launch and bag files, etc.)
 install(FILES
-  launch/talker.launch
+  launch/example.launch
   launch/hello.launch
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
@@ -124,7 +123,7 @@ install(FILES
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_beginner_tutorials.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_example.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()
