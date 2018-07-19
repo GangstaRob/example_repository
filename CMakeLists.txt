@@ -95,12 +95,11 @@ target_link_libraries(hello
  install(PROGRAMS
    scripts/talker.py
    scripts/listener.py
-   src/hello.cpp
    DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
  )
 
 ## Mark executables and/or libraries for installation
-install(TARGETS beginner_tutorials beginner_tutorials_node
+install(TARGETS my_tutorial hello
   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
