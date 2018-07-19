@@ -1,6 +1,6 @@
 <launch>
   <node 
-     pkg="mypkg"
+     pkg="my_tutorial"
      type="hello"
      name="hello_launcher"
      ns="sim2"
