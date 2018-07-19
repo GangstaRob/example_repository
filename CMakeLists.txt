@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(my_tutorial)
+project(example_pkg)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -20,16 +20,16 @@ find_package(catkin REQUIRED COMPONENTS roscpp rospy std_msgs message_generation
 #######################################
 
 ## Generate messages in the 'msg' folder
- add_message_files(
-   FILES
-   Num.msg
- )
+# add_message_files(
+#   FILES
+#   Num.msg
+# )
 
 ## Generate services in the 'srv' folder
- add_service_files(
-   FILES
-   AddTwoInts.srv
- )
+# add_service_files(
+#   FILES
+#   AddTwoInts.srv
+# )
 
 ## Generate added messages and services with any dependencies listed here
  generate_messages(
