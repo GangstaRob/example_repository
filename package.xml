@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package>
-  <name>beginner_tutorials</name>
+  <name>my_tutorial</name>
   <version>0.0.1</version>
-  <description>The beginner_tutorials package</description>
+  <description>The my_tutorial package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag --> 
   <!-- Example:  -->
