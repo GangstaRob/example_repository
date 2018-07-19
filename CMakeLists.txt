@@ -115,6 +115,7 @@ install(TARGETS hello
 ## Mark other files for installation (e.g. launch and bag files, etc.)
 install(FILES
   launch/talker.launch
+  launch/hello.launch
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
 
