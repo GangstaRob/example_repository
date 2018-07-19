@@ -3,6 +3,7 @@
      pkg="my_tutorial"
      type="hello"
      name="hello_launcher"
-     ns="sim2"
+     output="screen"
+     ns="sim"
   />
 </launch>
